@@ -59,19 +59,22 @@ a {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
-  margin: 15em 6em;
   gap: 35px;
+  max-width: 1300px;
+  margin: 15em auto;
 }
 
 main .bildschrim {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrqzp2xpU4sVLkI1rs8OnZnQ_KPHYWfW72bA&usqp=CAU");
-  background-size: cover;
+  background-size: contain;
   border-radius: 8px;
   box-shadow: 0px 2px 8px 3px #9093ff;
-  height: 100%;
+  width: 500px;
+  height: 280px;
+  background-repeat: no-repeat;
 }
 
 .btn {
